@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #DECDAC;
+  font-family:'Inika', cursive;
+}
+.popup {
+  width: 500px;
+  height: 260px;
+  background-color: #efeaf3;
+  border-radius: 16px;
+  padding: 8px;
+  position: fixed;
+  box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s ease-in-out;
+  top: 0;
+  left: 0;
+  /* display: none; */
+ 
+}
+.container{
+   display: flex;
+}
+.popup .img-cont{
+  max-width:100px;
+  height: 150px;
+  margin-left:30px;
+}
+.img-cont img{
+  width: 100%;
+  margin-top: -25px;
+}
+
+.content-cont{
+  height: 150px;
+  padding-top:30px;
+  padding-left: 35px;
+}
+.content-cont h2{
+  font-size: 40px;
+}
+.content-cont p{
+  width: 280px;
+  font-size: 18px;
+}
+
+.input-btn{
+  display: flex;
+  width: 270px;
+  align-items: center;
+  margin-top: 20px;
+  margin-left:35px;
+  
+}
+input{
+  padding: 10px 45px; 
+  background-color:#eee8dd;
+  border: 1px solid grey; 
+  border-top-left-radius: 30px;
+  border-bottom-left-radius:30px;
+  font-family:'Inika', cursive;
+  outline: none;
+}
+.btn-2{
+  padding: 10px 45px;
+  font-family:'Inika', cursive;
+  background-color:#ebbf53;
+  color: white;
+  border: 1px solid #ebbf53; 
+  border-top-right-radius: 30px;
+  border-bottom-right-radius:30px;
+}
+.btn-container{
+  width: 400px;
+  height: 150px;
+  border-radius: 16px;
+  background-color: #efeaf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 250px auto;
+  cursor: pointer;
+  flex-direction: column;
+}
+.btn-container button{
+  width: 65%;
+  padding: 14px 0;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  font-family:'Inika', cursive;
+  background-color: #ebbf53;
+  color: white;
+  cursor: pointer;
+}
+.hand-click{
+  width: 40px;
+  margin-left: 340px;
+  margin-top: 10px;
+}
+.popup-open .popup {
+  /* display: block; */
+  transform: scale(1);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.close-icon {
+  font-size: 48px;
+  font-weight: 700;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+  font-family: serif;
+}
+.hide-container{
+  display: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-open .overlay {
+  display: block;
+}

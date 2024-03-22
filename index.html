@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop Up Modal</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inika:regular,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="btn-container">
+      <button>Get Newsletter</button>
+      <div class="hand-container">
+        <img
+          class="hand-click"
+          src="Images/clarity_cursor-hand-click-line.png"
+          alt="cursor-hand-click"
+        />
+      </div>
+    </div>
+
+    <div class="popup-container">
+      <div class="overlay"></div>
+      <div class="popup">
+        <div class="close-icon">&times;</div>
+
+        <div class="container">
+          <div class="img-cont">
+            <img src="Images/img.png" alt="" />
+          </div>
+          <div class="content-cont">
+            <h2>Don't Miss Out.</h2>
+            <p>Sign up for our newsletter to stay in the loop.</p>
+          </div>
+        </div>
+
+        <div class="input-btn">
+          <input type="email" placeholder="EMAIL ADDRESS" />
+          <button class="btn-2">SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
